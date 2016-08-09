@@ -1,0 +1,37 @@
+[
+  {
+    "name": "question",
+    "label": "Question or description",
+    "type": "text"
+  },
+  {
+    "name": "placeholderText",
+    "label": "Placeholder text",
+    "type": "text"
+  },
+  {
+    "name": "inputRows",
+    "label": "Input rows",
+    "type": "select",
+    "description": "Number of lines for the input field.",
+    "options": [
+      {
+        "value": "1",
+        "label": "1 line"
+      },
+      {
+        "value": "2",
+        "label": "2 lines"
+      },
+      {
+        "value": "3",
+        "label": "3 lines"
+      },
+      {
+        "value": "10",
+        "label": "10 lines"
+      }
+    ],
+    "default": "1"
+  }
+]
