@@ -18,8 +18,8 @@ describe('Open Ended Question', () => {
   });
 
   it('should trigger changed event on input change', (done) =>{
-    openEndedQuestion.on('changed', (e) => {
-      expect(e.data).toMatch('changed input');
+    openEndedQuestion.on('xAPIchanged', (e) => {
+      expect(e).toBeDefined();
       done();
     });
 

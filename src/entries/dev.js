@@ -10,9 +10,9 @@ openEndedQuestion.attach(H5P.jQuery('<div>').appendTo(H5P.jQuery('body')));
 const externalEventsElement = document.createElement('div');
 externalEventsElement.style.fontSize = '12px';
 document.body.appendChild(externalEventsElement);
-openEndedQuestion.on('changed', (event) => {
+openEndedQuestion.on('xAPIchanged', (event) => {
   const eventElement = document.createElement('pre');
-  eventElement.innerHTML = JSON.stringify(event.data, null, 2);
+  eventElement.innerHTML = JSON.stringify(event.data.data.statement, null, 2);
   externalEventsElement.appendChild(eventElement);
 
   if (externalEventsElement.children.length > 1) {

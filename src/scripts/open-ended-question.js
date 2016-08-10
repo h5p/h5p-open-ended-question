@@ -1,3 +1,5 @@
+import xApiGenerator from './xapiGenerator';
+
 export default class OpenEndedQuestion extends H5P.EventDispatcher {
 
   /**
@@ -17,6 +19,8 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
       placeholderText = '',
       inputRows = 1
     } = params;
+
+    this.xApiGenerator = new xApiGenerator(question);
 
     /**
      * Create open ended question element
@@ -57,7 +61,9 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
       const inputElement = this.createInput(inputRows, placeholderText);
       inputElement.className = 'h5p-open-ended-question-input';
       inputElement.addEventListener('input', () => {
-        this.trigger('changed', inputElement.value);
+        let xApiTemplate = this.createXAPIEventTemplate('interacted');
+        const xApiEvent = this.xApiGenerator.generateXApi(xApiTemplate, inputElement.value);
+        this.trigger('xAPIchanged', xApiEvent);
       });
 
       questionWrapper.appendChild(questionElement);
