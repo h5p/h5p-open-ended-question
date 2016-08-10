@@ -7,7 +7,8 @@
   {
     "name": "placeholderText",
     "label": "Placeholder text",
-    "type": "text"
+    "type": "text",
+    "optional": true
   },
   {
     "name": "inputRows",
