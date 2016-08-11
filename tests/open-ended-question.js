@@ -18,7 +18,7 @@ describe('Open Ended Question', () => {
   });
 
   it('should trigger changed event on input change', (done) =>{
-    openEndedQuestion.on('xAPIchanged', (e) => {
+    openEndedQuestion.on('xAPI', (e) => {
       expect(e).toBeDefined();
       done();
     });

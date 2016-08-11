@@ -63,7 +63,7 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
       inputElement.addEventListener('input', () => {
         let xApiTemplate = this.createXAPIEventTemplate('interacted');
         const xApiEvent = this.xApiGenerator.generateXApi(xApiTemplate, inputElement.value);
-        this.trigger('xAPIchanged', xApiEvent);
+        this.trigger(xApiEvent);
       });
 
       questionWrapper.appendChild(questionElement);
