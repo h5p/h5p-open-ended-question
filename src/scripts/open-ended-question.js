@@ -1,3 +1,4 @@
+import './styles/open-ended-question.css';
 import xApiGenerator from './xapiGenerator';
 
 export default class OpenEndedQuestion extends H5P.EventDispatcher {
@@ -29,6 +30,7 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
      */
     this.createQuestion = function (questionString) {
       const question = document.createElement('div');
+      question.className = 'h5p-open-ended-question-text';
       question.innerHTML = questionString;
       return question;
     };
@@ -58,6 +60,9 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
       questionWrapper.className = 'h5p-open-ended-question';
 
       const questionElement = this.createQuestion(question);
+      const content = document.createElement('div');
+      content.className = 'h5p-open-ended-question-content';
+
       const inputElement = this.createInput(inputRows, placeholderText);
       inputElement.className = 'h5p-open-ended-question-input';
       inputElement.addEventListener('input', () => {
@@ -65,9 +70,10 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
         const xApiEvent = this.xApiGenerator.generateXApi(xApiTemplate, inputElement.value);
         this.trigger(xApiEvent);
       });
+      content.appendChild(inputElement);
 
       questionWrapper.appendChild(questionElement);
-      questionWrapper.appendChild(inputElement);
+      questionWrapper.appendChild(content);
 
       $wrapper.get(0).appendChild(questionWrapper);
     }
