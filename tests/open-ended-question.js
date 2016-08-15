@@ -36,6 +36,12 @@ describe('Open Ended Question', () => {
       expect(questionElement.textContent).toBe('question');
     });
 
+    it('should parse html in for question', () => {
+      const questionElement = openEndedQuestion.createQuestion('Don&#039;t you like cake ?');
+      expect(questionElement).toBeDefined();
+      expect(questionElement.textContent).toBe('Don\'t you like cake ?');
+    });
+
     it('should create an input', () => {
       const inputElement = openEndedQuestion.createInput(3, 'placeholder');
       expect(inputElement.placeholder).toMatch('placeholder');
@@ -46,5 +52,7 @@ describe('Open Ended Question', () => {
       const inputElement = openEndedQuestion.createInput(1);
       expect(inputElement.placeholder).toBe('');
     })
-  })
+  });
+
+  // TODO: Add test for reattaching content type
 });

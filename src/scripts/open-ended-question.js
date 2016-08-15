@@ -29,7 +29,7 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
      */
     this.createQuestion = function (questionString) {
       const question = document.createElement('div');
-      question.textContent = questionString;
+      question.innerHTML = questionString;
       return question;
     };
 
