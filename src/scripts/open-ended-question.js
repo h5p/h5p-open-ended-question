@@ -60,7 +60,7 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
       questionWrapper.classList.add('h5p-open-ended-question');
 
       const questionElement = document.createElement('div');
-      questionElement.classList.add('h5p-subcontent-question');
+      questionElement.classList.add('h5p-open-ended-question-question','h5p-subcontent-question');
 
       const questionText = this.createQuestion(question);
       questionElement.appendChild(questionText);
