@@ -57,11 +57,11 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
      */
     this.attach = function ($wrapper) {
       const questionWrapper = document.createElement('div');
-      questionWrapper.className = 'h5p-open-ended-question';
+      questionWrapper.classList.add('h5p-open-ended-question', 'h5p-subcontent-question');
 
       const questionElement = this.createQuestion(question);
       const content = document.createElement('div');
-      content.className = 'h5p-open-ended-question-content';
+      content.classList.add('h5p-open-ended-question-content', 'h5p-subcontent-body');
 
       const inputElement = this.createInput(inputRows, placeholderText);
       inputElement.className = 'h5p-open-ended-question-input';
