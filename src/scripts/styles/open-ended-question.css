@@ -10,6 +10,7 @@
   position: relative;
   margin: 0;
   padding: 1em;
+  background-color: #FFF;
 }
 
 .h5p-open-ended-question-question:before {
