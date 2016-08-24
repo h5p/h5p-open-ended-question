@@ -6,7 +6,7 @@
     "test": "karma start",
     "testdev": "karma start --autoWatch --no-single-run",
     "build": "webpack",
-    "dev": "webpack-dev-server -d --inline --hot --open"
+    "dev": "webpack-dev-server --config webpack.dev.config.js -d --inline --hot --open"
   },
   "keywords": [
     "lightweight",
