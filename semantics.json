@@ -7,6 +7,7 @@
   {
     "name": "placeholderText",
     "label": "Placeholder text",
+    "default": "Start writing...",
     "type": "text",
     "optional": true
   },
