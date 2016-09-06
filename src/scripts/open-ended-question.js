@@ -88,6 +88,17 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
       $wrapper.get(0).appendChild(questionWrapper);
     };
 
+    /**
+     * Get current state
+     * @return {string}
+     */
+    this.getCurrentState = function () {
+      return this.currentInput;
+    };
+
+    /**
+     * Restore previous state
+     */
     this.restorePreviousState = function () {
       if (!contentData.previousState) {
         return;
