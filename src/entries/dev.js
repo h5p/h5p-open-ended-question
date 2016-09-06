@@ -3,8 +3,15 @@ import OpenEndedQuestion from '../scripts/open-ended-question';
 
 var params = require('../content/dev.json');
 
+const contentData = {
+  previousState: 'Hello world!'
+};
+
 const openEndedQuestion = new OpenEndedQuestion(params);
 openEndedQuestion.attach(H5P.jQuery('<div>').appendTo(H5P.jQuery('body')));
+
+const oeqState = new OpenEndedQuestion(params, null, contentData);
+oeqState.attach(H5P.jQuery('<div>').appendTo(H5P.jQuery('body')));
 
 // Create external event listener element
 const externalEventsElement = document.createElement('div');

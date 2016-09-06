@@ -9,9 +9,10 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
    * @param {string} params.question Question text or description
    * @param {string} params.placeholderText Placeholder text for input area
    * @param {number} params.inputRows Number of rows inside input area
-   * @param {number} contentId
+   * @param {number|*} contentId
+   * @param {Object} contentData
    */
-  constructor(params, contentId = null) {
+  constructor(params, contentId = null, contentData = {}) {
     super();
 
     // De-structure params into default values
@@ -20,6 +21,8 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
       placeholderText = '',
       inputRows = 1
     } = params;
+
+    this.currentInput = '';
 
     this.xApiGenerator = new xApiGenerator(question);
 
@@ -45,6 +48,7 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
     this.createInput = function (lines, placeholderString) {
       const input = document.createElement('textarea');
       input.placeholder = placeholderString || '';
+      input.textContent = this.currentInput;
       input.rows = lines;
       input.style.resize = 'none';
 
@@ -73,6 +77,7 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
       inputElement.addEventListener('input', () => {
         let xApiTemplate = this.createXAPIEventTemplate('interacted');
         const xApiEvent = this.xApiGenerator.generateXApi(xApiTemplate, inputElement.value);
+        this.currentInput = inputElement.value;
         this.trigger(xApiEvent);
       });
       content.appendChild(inputElement);
@@ -81,6 +86,15 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
       questionWrapper.appendChild(content);
 
       $wrapper.get(0).appendChild(questionWrapper);
-    }
+    };
+
+    this.restorePreviousState = function () {
+      if (!contentData.previousState) {
+        return;
+      }
+      this.currentInput = contentData.previousState;
+    };
+
+    this.restorePreviousState();
   }
 }
