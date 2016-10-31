@@ -8,6 +8,7 @@
     "name": "placeholderText",
     "label": "Placeholder text",
     "default": "Start writing...",
+    "description": "Text that initially will be shown in the input field. Will be removed automatically when the user starts writing.",
     "type": "text",
     "optional": true
   },
@@ -15,7 +16,7 @@
     "name": "inputRows",
     "label": "Input rows",
     "type": "select",
-    "description": "Number of lines for the input field.",
+    "description": "Determines the height of the input field.",
     "options": [
       {
         "value": "1",
