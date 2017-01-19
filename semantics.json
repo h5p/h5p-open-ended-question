@@ -2,12 +2,14 @@
   {
     "name": "question",
     "label": "Question or description",
+    "importance": "high",
     "type": "text"
   },
   {
     "name": "placeholderText",
     "label": "Placeholder text",
     "default": "Start writing...",
+    "importance": "low",
     "description": "Text that initially will be shown in the input field. Will be removed automatically when the user starts writing.",
     "type": "text",
     "optional": true
@@ -16,6 +18,7 @@
     "name": "inputRows",
     "label": "Input rows",
     "type": "select",
+    "importance": "high",
     "description": "Determines the height of the input field.",
     "options": [
       {
