@@ -74,7 +74,7 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
 
       const inputElement = this.createInput(inputRows, placeholderText);
       inputElement.className = 'h5p-open-ended-question-input';
-      inputElement.addEventListener('input', () => {
+      inputElement.addEventListener('blur', () => {
         let xApiTemplate = this.createXAPIEventTemplate('interacted');
         const xApiEvent = this.xApiGenerator.generateXApi(xApiTemplate, inputElement.value);
         this.currentInput = inputElement.value;
