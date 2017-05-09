@@ -25,7 +25,7 @@ describe('Open Ended Question', () => {
 
     const inputElement = document.querySelector('.h5p-open-ended-question-input');
     inputElement.textContent = 'changed input';
-    const event = new KeyboardEvent('input');
+    const event = new KeyboardEvent('blur');
     inputElement.dispatchEvent(event);
   });
 
