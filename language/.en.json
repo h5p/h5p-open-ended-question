@@ -24,7 +24,8 @@
         {
           "label": "10 lines"
         }
-      ]
+      ],
+      "default": "1"
     }
   ]
 }
