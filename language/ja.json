@@ -1,12 +1,12 @@
 {
   "semantics":[
     {
-      "label":"Question or description"
+      "label":"設問または説明"
     },
     {
-      "label":"Placeholder text",
-      "default":"Start writing...",
-      "description":"Text that initially will be shown in the input field. Will be removed automatically when the user starts writing."
+      "label":"プレースホルダーテキスト",
+      "default":"書き込み開始 ...",
+      "description":"初期状態で入力フィールドに表示されるテキスト。ユーザーが記入を始めると自動的に削除されます。"
     },
     {
       "label":"Input rows",
