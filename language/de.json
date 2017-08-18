@@ -1,0 +1,30 @@
+{
+  "semantics": [
+    {
+      "label": "Frage oder Beschreibung"
+    },
+    {
+      "label": "Platzhaltertext",
+      "default": "Starte mit dem Schreiben ...",
+      "description": "Text, der anfangs im Eingabefeld erscheint. Wird automatisch entfernt, wenn der Nutzer anfängt zu schreiben."
+    },
+    {
+      "label": "Eingabezeilen",
+      "description": "Bestimmt die Höhe des Eingabefeldes",
+      "options": [
+        {
+          "label": "1 Zeile"
+        },
+        {
+          "label": "2 Zeilen"
+        },
+        {
+          "label": "3 Zeilen"
+        },
+        {
+          "label": "10 Zeilen"
+        }
+      ]
+    }
+  ]
+}
