@@ -1,11 +1,11 @@
 {
   "semantics":[
     {
-      "label":"Question or description"
+      "label":"Domanda o descrizione"
     },
     {
-      "label":"Placeholder text",
-      "default":"Start writing...",
+      "label":"Testo segnaposto",
+      "default":"Inizia a scrivere...",
       "description":"Text that initially will be shown in the input field. Will be removed automatically when the user starts writing."
     },
     {
