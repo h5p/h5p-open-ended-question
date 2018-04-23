@@ -82,6 +82,9 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
         this.currentInput = inputElement.value;
         this.trigger(xApiEvent);
       });
+
+      inputElement.addEventListener('keydown', () => this.trigger('changed'));
+
       content.appendChild(inputElement);
 
       questionWrapper.appendChild(questionElement);
