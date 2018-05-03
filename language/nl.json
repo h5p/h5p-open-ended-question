@@ -1,28 +1,28 @@
 {
   "semantics":[
     {
-      "label":"Question or description"
+      "label":"Vraag of beschrijving"
     },
     {
-      "label":"Placeholder text",
-      "default":"Start writing...",
-      "description":"Text that initially will be shown in the input field. Will be removed automatically when the user starts writing."
+      "label":"Placeholder tekst",
+      "default":"Begin hier te schrijven...",
+      "description":"De tekst die aanvankelijk in het tekstveld wordt getoond, zal automatisch verdwijnen zodra de gebruiker begint te schrijven."
     },
     {
-      "label":"Input rows",
-      "description":"Determines the height of the input field.",
+      "label":"Input rijen",
+      "description":"Bepaalt de hoogte van het tekstveld.",
       "options":[
         {
-          "label":"1 line"
+          "label":"1 regel"
         },
         {
-          "label":"2 lines"
+          "label":"2 regels"
         },
         {
-          "label":"3 lines"
+          "label":"3 regelss"
         },
         {
-          "label":"10 lines"
+          "label":"10 regels"
         }
       ],
       "default":"1"
