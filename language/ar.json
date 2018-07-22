@@ -1,28 +1,28 @@
 {
   "semantics": [
     {
-      "label": "Question or description"
+      "label": "سؤال أو وصف"
     },
     {
-      "label": "Placeholder text",
+      "label": "النص المؤقت",
       "default": "Start writing...",
-      "description": "Text that initially will be shown in the input field. Will be removed automatically when the user starts writing."
+      "description": "النص الذي سيظهر في البداية في حقل الإدخال. ستتم إزالته تلقائيًا عندما يبدأ المستخدم في الكتابة."
     },
     {
-      "label": "Input rows",
-      "description": "Determines the height of the input field.",
+      "label": "ادخال  السطور",
+      "description": "هنا يحدد ارتفاع حقل الادخال.",
       "options": [
         {
-          "label": "1 line"
+          "label": "سطر واحد"
         },
         {
-          "label": "2 lines"
+          "label": "سطرين"
         },
         {
-          "label": "3 lines"
+          "label": "ثلاثة اسطر"
         },
         {
-          "label": "10 lines"
+          "label": "عشرة اسطر"
         }
       ]
     }
