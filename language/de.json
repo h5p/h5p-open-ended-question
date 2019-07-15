@@ -1,28 +1,28 @@
 {
   "semantics": [
     {
-      "label": "Question or description"
+      "label": "Frage bzw. Aufgabenbeschreibung"
     },
     {
-      "label": "Placeholder text",
-      "default": "Start writing...",
-      "description": "Text that initially will be shown in the input field. Will be removed automatically when the user starts writing."
+      "label": "Platzhaltertext",
+      "default": "Schreibe hier hinein...",
+      "description": "Text der anfangs im Eingabefeld angezeigt wird. Wird automatisch entfernt, wenn der Nutzer anfängt zu schreiben."
     },
     {
-      "label": "Input rows",
-      "description": "Determines the height of the input field.",
+      "label": "Zeilen",
+      "description": "Bestimmt die Höhe des Eingabefelds",
       "options": [
         {
-          "label": "1 line"
+          "label": "1 Zeile"
         },
         {
-          "label": "2 lines"
+          "label": "2 Zeilen"
         },
         {
-          "label": "3 lines"
+          "label": "3 Zeilen"
         },
         {
-          "label": "10 lines"
+          "label": "10 Zeilen"
         }
       ]
     }
