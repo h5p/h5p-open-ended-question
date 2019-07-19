@@ -74,7 +74,7 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
       content.classList.add('h5p-open-ended-question-content');
       content.classList.add('h5p-subcontent-body');
 
-      const inputElement = this.createInput(inputRows, placeholderText);
+      const inputElement = this.createInput(inputRows, OpenEndedQuestion.htmlDecode(placeholderText));
       inputElement.className = 'h5p-open-ended-question-input';
       inputElement.addEventListener('blur', () => {
         let xApiTemplate = this.createXAPIEventTemplate('interacted');
@@ -112,5 +112,15 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
     };
 
     this.restorePreviousState();
+  }
+
+  /**
+   * Retrieve true string from HTML encoded string.
+   * @param {string} input Input string.
+   * @return {string} Output string.
+   */
+  static htmlDecode(input) {
+    var dparser = new DOMParser().parseFromString(input, 'text/html');
+    return dparser.documentElement ? dparser.documentElement.textContent : '';
   }
 }
