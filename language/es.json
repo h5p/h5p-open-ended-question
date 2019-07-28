@@ -1,28 +1,28 @@
 {
   "semantics": [
     {
-      "label": "Question or description"
+      "label": "Pregunta o descripción"
     },
     {
-      "label": "Placeholder text",
-      "default": "Start writing...",
-      "description": "Text that initially will be shown in the input field. Will be removed automatically when the user starts writing."
+      "label": "Texto remplazable",
+      "default": "Comience a escribir...",
+      "description": "Texto que será mostrado inicialmente en el campo para entrada. Será quitado automáticamente cuando el usuario comience a escribir."
     },
     {
-      "label": "Input rows",
-      "description": "Determines the height of the input field.",
+      "label": "Ingresar filas",
+      "description": "Determina la altura del campo de entrada.",
       "options": [
         {
-          "label": "1 line"
+          "label": "1 línea"
         },
         {
-          "label": "2 lines"
+          "label": "2 líneas"
         },
         {
-          "label": "3 lines"
+          "label": "3 líneas"
         },
         {
-          "label": "10 lines"
+          "label": "10 líneas"
         }
       ]
     }
