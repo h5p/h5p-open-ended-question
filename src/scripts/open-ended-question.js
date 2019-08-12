@@ -47,7 +47,8 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
      */
     this.createInput = function (lines, placeholderString) {
       const input = document.createElement('textarea');
-      input.placeholder = placeholderString || '';
+      input.innerHTML = placeholderString || ''; // Convert HTML to Text
+      input.placeholder = input.innerText; // and use as placeholder
       input.textContent = this.currentInput;
       input.rows = lines;
       input.style.resize = 'none';
