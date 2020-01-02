@@ -13,7 +13,7 @@
       "description": "Stabilisci l'altezza del campo di input",
       "options": [
         {
-          "label": "1 line"
+          "label": "1 riga"
         },
         {
           "label": "2 righe"
