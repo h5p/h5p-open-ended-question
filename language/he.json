@@ -1,28 +1,28 @@
 {
   "semantics": [
     {
-      "label": "Question or description"
+      "label": "שאלה או תיאור"
     },
     {
-      "label": "Placeholder text",
-      "default": "Start writing...",
-      "description": "Text that initially will be shown in the input field. Will be removed automatically when the user starts writing."
+      "label": "תוכן לדוגמה, המוצג בשדה ההזנה",
+      "default": "התחלת כתיבה...",
+      "description": "טקסט שבהתחלה יוצג בשדה ההזנה. יוסר אוטומטית כאשר המשתמש מתחיל לכתוב."
     },
     {
-      "label": "Input rows",
-      "description": "Determines the height of the input field.",
+      "label": "שורות קלט",
+      "description": "קובע את הגובה של שדות ההזנה.",
       "options": [
         {
-          "label": "1 line"
+          "label": "שורה אחת"
         },
         {
-          "label": "2 lines"
+          "label": "שתי שורות"
         },
         {
-          "label": "3 lines"
+          "label": "שלוש שורות"
         },
         {
-          "label": "10 lines"
+          "label": "עשר שורות"
         }
       ]
     }
