@@ -1,28 +1,28 @@
 {
   "semantics": [
     {
-      "label": "Question or description"
+      "label": "Pregunta o descripció"
     },
     {
-      "label": "Placeholder text",
-      "default": "Start writing...",
-      "description": "Text that initially will be shown in the input field. Will be removed automatically when the user starts writing."
+      "label": "Text de l’espai reservat",
+      "default": "Comenceu a escriure...",
+      "description": "Text que inicialment es mostrarà al camp d’entrada. S’eliminarà automàticament quan l’usuari comenci a escriure."
     },
     {
-      "label": "Input rows",
-      "description": "Determines the height of the input field.",
+      "label": "Files d’introducció de text",
+      "description": "Determina l’alçada del camp d’introducció de text.",
       "options": [
         {
-          "label": "1 line"
+          "label": "1 línia"
         },
         {
-          "label": "2 lines"
+          "label": "2 línies"
         },
         {
-          "label": "3 lines"
+          "label": "3 línies"
         },
         {
-          "label": "10 lines"
+          "label": "10 línies"
         }
       ]
     }
