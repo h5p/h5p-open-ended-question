@@ -1,28 +1,28 @@
 {
   "semantics": [
     {
-      "label": "Question or description"
+      "label": "질문 혹은 설명"
     },
     {
-      "label": "Placeholder text",
-      "default": "Start writing...",
-      "description": "Text that initially will be shown in the input field. Will be removed automatically when the user starts writing."
+      "label": "자리표시용 텍스트",
+      "default": "글쓰기 시작...",
+      "description": "입력 필드에 처음 표시되는 텍스트. 사용자가 쓰기를 시작할 때 자동으로 제거됨."
     },
     {
-      "label": "Input rows",
-      "description": "Determines the height of the input field.",
+      "label": "행입력",
+      "description": "입력 필드의 높이를 결정",
       "options": [
         {
-          "label": "1 line"
+          "label": "1행"
         },
         {
-          "label": "2 lines"
+          "label": "2행"
         },
         {
-          "label": "3 lines"
+          "label": "3행"
         },
         {
-          "label": "10 lines"
+          "label": "10행"
         }
       ]
     }
