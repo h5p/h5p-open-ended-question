@@ -6,7 +6,7 @@
     {
       "label": "Texto remplazable",
       "default": "Comience a escribir...",
-      "description": "Texto que será mostrado inicialmente en el campo para entrada. Será quitado automáticamente cuando el usuario comience a escribir."
+      "description": "Texto que inicialmente será mostrado en el campo para entrada. Será removido automáticamente cuando el usuario comience a escribir."
     },
     {
       "label": "Ingresar filas",

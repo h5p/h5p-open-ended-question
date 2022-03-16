@@ -1,28 +1,28 @@
 {
   "semantics": [
     {
-      "label": "Question or description"
+      "label": "Vraag of beskrywing"
     },
     {
-      "label": "Placeholder text",
-      "default": "Start writing...",
-      "description": "Text that initially will be shown in the input field. Will be removed automatically when the user starts writing."
+      "label": "Plekhouer teks",
+      "default": "Begin skryf...",
+      "description": "Teks wat aanvanklik in die invoerveld vertoon word. Sal outomaties verwyder word wanneer die gebruiker begin skryf."
     },
     {
-      "label": "Input rows",
-      "description": "Determines the height of the input field.",
+      "label": "Invoer rye",
+      "description": "Bepaal die hoogte van die invoerveld.",
       "options": [
         {
-          "label": "1 line"
+          "label": "1 lyn"
         },
         {
-          "label": "2 lines"
+          "label": "2 lyne"
         },
         {
-          "label": "3 lines"
+          "label": "3 lyne"
         },
         {
-          "label": "10 lines"
+          "label": "10 lyne"
         }
       ]
     }

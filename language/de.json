@@ -10,7 +10,7 @@
     },
     {
       "label": "Zeilen",
-      "description": "Bestimmt die Höhe des Eingabefelds",
+      "description": "Bestimmt die Höhe des Eingabefelds.",
       "options": [
         {
           "label": "1 Zeile"
