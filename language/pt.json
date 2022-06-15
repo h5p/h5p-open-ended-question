@@ -4,7 +4,7 @@
       "label": "Question or description"
     },
     {
-      "label": "Texto do espaço reservado",
+      "label": "Placeholder text",
       "default": "Start writing...",
       "description": "Text that initially will be shown in the input field. Will be removed automatically when the user starts writing."
     },
