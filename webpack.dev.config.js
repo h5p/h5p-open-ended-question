@@ -1,9 +1,11 @@
 var autoprefixer = require('autoprefixer');
-var webpack = require('webpack');
 var path = require('path');
+const nodeEnv = process.env.NODE_ENV || 'development';
 
 module.exports = {
-  entry: "./src/entries/dev.js",
+  mode: nodeEnv,
+  context: path.resolve(__dirname, 'src'),
+  entry: "./entries/dev.js",
   output: {
     path: path.join(__dirname, '/build'),
     filename: "dev.js"
@@ -16,22 +18,27 @@ module.exports = {
           path.resolve(__dirname, "src/scripts"),
           path.resolve(__dirname, "src/entries")
         ],
-        loader: 'babel'
+        use: 'babel-loader'
       },
       {
         test: /\.css$/,
         include: path.resolve(__dirname, "src/scripts"),
-        loader: "style!css!postcss"
-      },
-      {
-        test: /\.json$/,
-        include: path.resolve(__dirname, "src/content"),
-        loader: 'json'
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [
+                  autoprefixer
+                ],
+              },
+            },
+          },
+        ]
       }
     ]
-  },
-  postcss: function () {
-    return [autoprefixer];
   },
   devServer: {
     port: 8052,
