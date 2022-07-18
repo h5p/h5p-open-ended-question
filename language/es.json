@@ -4,12 +4,12 @@
       "label": "Pregunta o descripción"
     },
     {
-      "label": "Texto remplazable",
-      "default": "Comience a escribir...",
-      "description": "Texto que inicialmente será mostrado en el campo para entrada. Será removido automáticamente cuando el usuario comience a escribir."
+      "label": "Texto por defecto",
+      "default": "Empieza a escribir...",
+      "description": "Texto mostrado inicialmente en el campo de entrada. Se eliminará automáticamente cuando el usuario empiece a escribir."
     },
     {
-      "label": "Ingresar filas",
+      "label": "Filas de entrada",
       "description": "Determina la altura del campo de entrada.",
       "options": [
         {

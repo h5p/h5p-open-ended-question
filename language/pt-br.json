@@ -4,9 +4,9 @@
       "label": "Questão ou descrição"
     },
     {
-      "label": "Texto placeholder",
+      "label": "Texto sinalizador",
       "default": "Comece a escrever...",
-      "description": "Texto que inicialmente será exibido no campo de entrada. Será removido automaticamente quando o usuário começar a escrever."
+      "description": "Texto que inicialmente será mostrado no campo de entrada. Será removido automaticamente quando o usuário começar a escrever."
     },
     {
       "label": "Linhas de entrada",
