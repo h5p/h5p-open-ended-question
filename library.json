@@ -10,12 +10,12 @@
   "machineName": "H5P.OpenEndedQuestion",
   "preloadedJs": [
     {
-      "path": "dist/dist.js"
+      "path": "dist/h5p-open-ended-question.js"
     }
   ],
   "preloadedCss": [
     {
-      "path": "dist/styles.css"
+      "path": "dist/h5p-open-ended-question.css"
     }
   ]
 }

@@ -1,6 +1,7 @@
-var path = require('path');
+const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-var autoprefixer = require('autoprefixer');
+const libraryName = process.env.npm_package_name;
+const autoprefixer = require('autoprefixer');
 const nodeEnv = process.env.NODE_ENV || 'development';
 
 module.exports = {
@@ -9,7 +10,7 @@ module.exports = {
   entry: "./entries/dist.js",
   output: {
     path: path.join(__dirname, '/dist'),
-    filename: "dist.js"
+    filename: `${libraryName}.js`
   },
   module: {
     rules: [
@@ -43,7 +44,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "styles.css"
+      filename: `${libraryName}.css`
     })
   ]
 };
