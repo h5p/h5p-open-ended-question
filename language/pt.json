@@ -4,9 +4,9 @@
       "label": "Question or description"
     },
     {
-      "label": "Placeholder text",
+      "label": "Texto marcador de posição",
       "default": "Start writing...",
-      "description": "Text that initially will be shown in the input field. Will be removed automatically when the user starts writing."
+      "description": "Texto que será inicialmente mostrado no campo de entrada. Será removido automaticamente quando o utilizador começar a escrever."
     },
     {
       "label": "Input rows",
