@@ -92,6 +92,19 @@ export default class OpenEndedQuestion extends H5P.EventDispatcher {
       questionWrapper.appendChild(content);
 
       $wrapper.get(0).appendChild(questionWrapper);
+
+      this.inputElement = inputElement;
+    };
+
+    /**
+     * Reset the task, clearing the input element.
+     */
+    this.resetTask = function () {
+      this.currentInput = '';
+
+      if (this.inputElement) {
+        this.inputElement.value = '';
+      }
     };
 
     /**
