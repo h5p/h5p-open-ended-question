@@ -5,8 +5,8 @@
   "scripts": {
     "test": "karma start",
     "testdev": "karma start --autoWatch --no-single-run",
-    "build": "cross-env NODE_ENV='production' webpack",
-    "watch": "cross-env NODE_ENV='development' webpack --watch",
+    "build": "webpack --mode=production",
+    "watch": "webpack --mode=development --watch",
     "dev": "webpack-dev-server --config webpack.dev.config.js -d --inline --hot --open"
   },
   "keywords": [
@@ -27,8 +27,6 @@
     "@babel/preset-env": "^7.18.6",
     "@babel/runtime": "^7.18.6",
     "babel-loader": "^8.2.5",
-    "coveralls": "^3.1.1",
-    "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
     "exports-loader": "^4.0.0",
     "expose-loader": "^4.0.0",
