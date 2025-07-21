@@ -1,28 +1,28 @@
 {
   "semantics": [
     {
-      "label": "Question or description"
+      "label": "Întrebare sau descriere"
     },
     {
-      "label": "Placeholder text",
-      "default": "Start writing...",
-      "description": "Text that initially will be shown in the input field. Will be removed automatically when the user starts writing."
+      "label": "Text substituent",
+      "default": "Începeți să scrieți...",
+      "description": "Text care va fi afișat inițial în câmpul de introducere. Va fi eliminat automat când utilizatorul începe să scrie."
     },
     {
-      "label": "Input rows",
-      "description": "Determines the height of the input field.",
+      "label": "Rânduri de introducere",
+      "description": "Determină înălțimea câmpului de introducere.",
       "options": [
         {
-          "label": "1 line"
+          "label": "1 rând"
         },
         {
-          "label": "2 lines"
+          "label": "2 rânduri"
         },
         {
-          "label": "3 lines"
+          "label": "3 rânduri"
         },
         {
-          "label": "10 lines"
+          "label": "10 rânduri"
         }
       ]
     }
